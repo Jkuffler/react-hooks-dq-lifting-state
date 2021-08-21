@@ -12,6 +12,7 @@ function TweetList(props) {
             handle={props.user.handle}
             photo={props.user.photo}
             tweet={tweet}
+            likes={tweet.likes}
           />
         ))}
       </div>

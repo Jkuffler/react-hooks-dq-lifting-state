@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function UserCard(props) {
   return (
     <div className="card">
@@ -13,7 +14,7 @@ function UserCard(props) {
         <div className="description">{props.description}</div>
       </div>
       <div
-        onClick={() => props.handleUserClick(props.id)}
+        onClick={() => props.showUserTweets(props) } //display in tweets list
         className="ui bottom attached button"
       >
         <i className="add icon"></i>
@@ -24,3 +25,5 @@ function UserCard(props) {
 }
 
 export default UserCard;
+
+//props.handleUserClick()
